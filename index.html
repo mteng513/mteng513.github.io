@@ -1,23 +1,20 @@
 ---
 layout: default
+title: Matthew Teng
 ---
+<div class = "home-wrap">
 
-<div class="home">
+  {% include header.html %}
+  <div class = "home-sections">
 
-  <h1 class="page-heading">Posts</h1>
+    {% include section-about.html %}
+    {% include section-portfolio.html %}
+    <!-- {% include section-blog.html %} -->
+    <!-- {% include section-portfolio.html %} -->
+    <!-- {% include columns.html %} -->
+    <!--Sections here-->
+    <!-- <div style = "height: 2000px"></div> -->
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
 
 </div>
