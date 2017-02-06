@@ -1,0 +1,66 @@
+.home-wrap
+  display: flex
+  min-height: 100vh
+
+  @media (max-width: 775px)
+    display: block
+
+.home-sections
+  flex: 1
+
+  section
+    padding: 50px 0
+
+  // Flex classes affect how columns are displayed
+  .flex
+    display: flex
+    flex-direction: row
+
+  .flex--center
+    justify-content: center
+
+  .flex--space-around
+    justify-content: space-around
+
+  .order-first
+    order: -1
+
+//columns
+.col-1
+  width: 300px
+  padding: 0 10px
+  box-sizing: border-box
+
+// width of 2 columns + margins 10px*2
+.col-2
+  max-width: 620px
+  padding: 0 10px
+  box-sizing: border-box
+  width: 100%
+
+//width is 50%
+.col-3
+  width: 50%
+
+//margin is width of 1 col = 300px + 2* 10px (sides of col) + 1 side of last col
+.push-right
+  margin-left: 330px
+
+@media (max-width: 640px)
+  .home-sections .flex
+    display: block
+
+  .col-1
+    width: 100%
+
+  .col-3
+     width: auto
+
+  .push-right
+    margin-left: 10px
+
+//Typograph
+.home-lead
+   font-size: 36px
+   color: black
+   line-height: 1
