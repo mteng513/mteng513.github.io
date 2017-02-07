@@ -600,7 +600,7 @@ body {
 
 section.about {
   background-image: url(../images/about.jpg);
-  background-position: center bottom;
+  background-position: center;
   background-size: cover;
   height: 70vh;
   display: -webkit-box;
@@ -722,7 +722,8 @@ section.portfolio {
     background: #3d96c0; }
   section.portfolio .home-lead {
     color: white;
-    max-width: 100%; }
+    max-width: 100%;
+    margin-bottom: 50px; }
   section.portfolio .thumbnail-wrap {
     margin: -50px 0; }
     section.portfolio .thumbnail-wrap::after {
@@ -820,9 +821,13 @@ section.box .right {
 
 section.intro {
   background: white; }
-  section.intro p {
+  section.intro p, section.intro h3 {
     max-width: 60%;
     margin: 0 auto 20px; }
+  section.intro a {
+    color: #8e1616; }
+  section.intro p {
+    font-size: 1.1em; }
 
 .home-wrap {
   display: -webkit-box;
