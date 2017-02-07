@@ -655,6 +655,8 @@ section.about {
       margin-top: 2.4em; } }
 
 @media (max-width: 640px) {
+  section.about .safari-only {
+    padding-left: 7em; }
   section.about h2, section.about .home-lead {
     position: relative;
     top: 50%;
@@ -680,21 +682,6 @@ section.about {
           -ms-flex-align: center;
               align-items: center;
       text-align: center; } }
-
-@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 0) {
-  section.about .safari-only .col-1 {
-    padding-left: 7em; }
-  section.about h2, section.about .home-lead {
-    position: relative;
-    top: 50%;
-    max-width: 300px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center; } }
 
 section.blog {
   background: -webkit-linear-gradient(53deg, #111266, #3E1166, #21114F);
