@@ -1,28 +1,57 @@
 section.about
   background:
-    image:url(../images/me.jpg)
+    image:url(../images/about.jpg)
     position: center bottom
     size: cover
-
 
   h2
     color: white
     font:
       size: 55px
       weight: 400
-    margin-left: -8em
-    margin-top: 5.2em
+    margin-left: 1.2em
+    margin-top: 5.4em
     margin-bottom: 0em
     line-height: 1
 
   .home-lead
-    margin-left: -12.15em
+    margin-left: 1.85em
     padding-bottom: 5.2em
     color: white
+
+  height: 70vh
+  display: flex
+  flex-direction: column
+  justify-content: left
+  align-items: left
+@media (max-width: 1080px)
+  section.about
+    background:
+      image:url(../images/about.jpg)
+    h2, .home-lead
+      position: relative
+      margin-left: auto
+      margin-right: auto
+      max-width: 200px
+    height: 50vh
+    justify-content: center
+
+@media (max-width: 768px)
+  section.about
+    background:
+      image:url(../images/about.jpg)
+    h2, .home-lead
+      position: relative
+      margin-left: auto
+      margin-right: auto
+      max-width: 200px
+    height: 50vh
+    justify-content: center
 
 @media (max-width: 640px)
   section.about
     h2, .home-lead
-      margin-left: auto
-      margin-right: auto
+      position: relative
+      top: 50%
+      text-align: center
       max-width: 300px

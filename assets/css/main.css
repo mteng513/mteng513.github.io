@@ -4,7 +4,7 @@
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 html {
-  font-family: sans-serif;
+  font-family: Inconsolata Regular, monospace;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -366,7 +366,7 @@ textarea {
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-  color: #777;
+  color: #333;
   font-weight: bold; }
 
 .gigantic {
@@ -396,7 +396,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2; }
 
 p {
-  margin: 0 0 20px 0; }
+  margin: 0 0 2em 0; }
 
 em {
   font-style: italic; }
@@ -412,12 +412,12 @@ hr {
   height: 0; }
 
 a {
-  color: #777;
+  color: #333;
   text-decoration: none;
   outline: 0; }
 
 a:hover, a:focus {
-  color: #111111; }
+  color: black; }
 
 ::-moz-selection {
   background: #FFF498; }
@@ -441,8 +441,7 @@ body {
   -webkit-tap-highlight-color: #FFF498; }
 
 body {
-  background: -webkit-linear-gradient(53deg, #21114F, #3E1166, #111266);
-  background: linear-gradient(37deg, #21114F, #3E1166, #111266);
+  background: #999;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Open Sans' sans-serif;
@@ -466,7 +465,8 @@ body {
 .home-wrap header {
   width: 135px;
   background: white;
-  padding: 30px 0px; }
+  padding: 30px 0px;
+  border-right: .25px solid #EEE; }
   .home-wrap header .header-position {
     position: fixed;
     top: 30px;
@@ -494,15 +494,16 @@ body {
     background-size: contain;
     height: 80px;
     padding: 0px;
-    margin: 0px; }
+    margin: 0px;
+    opacity: 0; }
   .home-wrap header .site-nav ul {
     list-style: none;
     margin: 20px 0;
     padding-right: 20px;
     text-align: right; }
     .home-wrap header .site-nav ul li {
-      margin-bottom: 30px;
-      font-size: 1em; }
+      margin-bottom: 50px;
+      font-size: 1.25em; }
       .home-wrap header .site-nav ul li:last-child {
         margin-bottom: 0px; }
   .home-wrap header .social {
@@ -593,26 +594,67 @@ body {
             transform: translateY(0%); } }
 
 section.about {
-  background-image: url(../images/me.jpg);
+  background-image: url(../images/about.jpg);
   background-position: center bottom;
-  background-size: cover; }
+  background-size: cover;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left; }
   section.about h2 {
     color: white;
     font-size: 55px;
     font-weight: 400;
-    margin-left: -8em;
-    margin-top: 5.2em;
+    margin-left: 1.2em;
+    margin-top: 5.4em;
     margin-bottom: 0em;
     line-height: 1; }
   section.about .home-lead {
-    margin-left: -12.15em;
+    margin-left: 1.85em;
     padding-bottom: 5.2em;
     color: white; }
 
+@media (max-width: 1080px) {
+  section.about {
+    background-image: url(../images/about.jpg);
+    height: 50vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    section.about h2, section.about .home-lead {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 200px; } }
+
+@media (max-width: 768px) {
+  section.about {
+    background-image: url(../images/about.jpg);
+    height: 50vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    section.about h2, section.about .home-lead {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 200px; } }
+
 @media (max-width: 640px) {
   section.about h2, section.about .home-lead {
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    top: 50%;
+    text-align: center;
     max-width: 300px; } }
 
 section.blog {
@@ -736,6 +778,12 @@ section.box .right {
   position: center;
   padding: 50px 0; }
 
+section.intro {
+  background: white; }
+  section.intro p {
+    max-width: 60%;
+    margin: 0 auto 20px; }
+
 .home-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -796,7 +844,7 @@ section.box .right {
   .col-3 {
     width: auto; }
   .push-right {
-    margin-left: 10px; } }
+    margin-left: 0em; } }
 
 .home-lead {
   font-size: 36px;
