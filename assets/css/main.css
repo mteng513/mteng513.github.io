@@ -664,20 +664,23 @@ section.about {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center; } }
+    text-align: center; }
+  .col-1 {
+    padding-left: 7em; } }
 
 @media (max-width: 480px) {
-  section.about h2, section.about .home-lead {
-    position: relative;
-    max-width: 300px;
-    margin-left: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center; } }
+  section.about {
+    background-image: url(../images/aboutsmall.png); }
+    section.about h2, section.about .home-lead {
+      position: relative;
+      max-width: 300px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: center; } }
 
 section.blog {
   background: -webkit-linear-gradient(53deg, #111266, #3E1166, #21114F);
