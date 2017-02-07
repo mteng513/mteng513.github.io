@@ -1,41 +1,12 @@
-.home-sections .box
-  padding: 0px
+section.contact
+  background: indigo
+  i
+    color: white
+    padding: 0 1.25em
+  display: flex
+  width: 100%
+  justify-content: center
 
-section.box
-
-  .box-img
-    display: block
-    float: left
-    width: calc(50% - 14px)
-    border: 3px solid white
-    box-shadow: 0px 3px 10px rgba(0,0,0,.3)
-    margin: 4px
-
-    img
-      width: 100%
-      display: block
-
-  .cf
-    clear: both
-    margin-bottom: 8px
-
-  .home-lead
-    text-align: center
-    z-index: 1
-
-  .home-cta
-    color: rgb(142,22,22)
-
-  .left
-    background:
-      color: coral
-      // image: url(/assets/images/)
-    position: center
-    padding: 50px 0
-
-  .right
-    background:
-      color: lavender
-      // image: url(/assets/images/)
-    position: center
-    padding: 50px 0
+  @media (max-width: 768px)
+    i
+      padding: 0 .5em
