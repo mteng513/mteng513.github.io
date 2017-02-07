@@ -599,7 +599,7 @@ body {
             transform: translateY(0%); } }
 
 section.about {
-  background-image: url(../images/about.jpg);
+  background-image: url(../images/wharf.jpg);
   background-position: center;
   background-size: cover;
   height: 70vh;
@@ -621,7 +621,7 @@ section.about {
     font-size: 55px;
     font-weight: 400;
     margin-left: 1.2em;
-    margin-top: 5.4em;
+    margin-top: 6.4em;
     margin-bottom: 0em;
     line-height: 1;
     text-shadow: 1px 1px #222; }
@@ -633,7 +633,7 @@ section.about {
 
 @media (max-width: 1080px) {
   section.about {
-    background-image: url(../images/about.jpg);
+    background-image: url(../images/wharf.jpg);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
@@ -645,7 +645,7 @@ section.about {
 
 @media (max-width: 768px) {
   section.about {
-    background-image: url(../images/about.jpg); }
+    background-image: url(../images/wharf.jpg); }
     section.about h2, section.about .home-lead {
       position: relative;
       margin-left: auto;
@@ -659,7 +659,6 @@ section.about {
     padding-left: 7em; }
   section.about h2, section.about .home-lead {
     position: relative;
-    top: 50%;
     max-width: 300px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -671,7 +670,7 @@ section.about {
 
 @media (max-width: 480px) {
   section.about {
-    background-image: url(../images/aboutsmall.png); }
+    background-image: url(../images/wharf.jpg); }
     section.about h2, section.about .home-lead {
       position: relative;
       max-width: 300px;
