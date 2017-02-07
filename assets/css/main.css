@@ -821,13 +821,15 @@ section.box .right {
 
 section.intro {
   background: white; }
-  section.intro p, section.intro h3 {
-    max-width: 60%;
-    margin: 0 auto 20px; }
   section.intro a {
     color: #8e1616; }
   section.intro p {
-    font-size: 1.1em; }
+    font-size: 1.1em;
+    max-width: 60%;
+    margin: 0 auto 20px; }
+  section.intro h3 {
+    max-width: 60%;
+    margin: 0 auto 20px; }
 
 .home-wrap {
   display: -webkit-box;
