@@ -13,11 +13,13 @@ section.about
     margin-top: 5.4em
     margin-bottom: 0em
     line-height: 1
+    text-shadow: 1px 1px #222
 
   .home-lead
     margin-left: 1.85em
     padding-bottom: 5.2em
     color: white
+    text-shadow: 1px 1px #222
 
   height: 70vh
   display: flex
@@ -46,12 +48,28 @@ section.about
       margin-right: auto
       max-width: 200px
     height: 50vh
-    justify-content: center
+    // justify-content: center
+    // align-items: center
+    // text-align: center
 
 @media (max-width: 640px)
   section.about
     h2, .home-lead
       position: relative
       top: 50%
-      text-align: center
       max-width: 300px
+      justify-content: center
+      align-items: center
+      text-align: center
+
+@media (max-width: 480px)
+  section.about
+    background:
+      image:url(../images/aboutsmall.png)
+  h2, .home-lead
+    position: relative
+    top: 50%
+    max-width: 300px
+    justify-content: center
+    align-items: center
+    text-align: center
