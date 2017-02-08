@@ -818,6 +818,7 @@ section.box .right {
   padding: 50px 0; }
 
 section.contact {
+  padding-top: 0;
   background: #222;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -841,19 +842,18 @@ section.intro {
     font-size: 1.25em;
     max-width: 60%;
     margin: 0 auto 20px;
-    color: #FFE; }
+    color: white; }
   section.intro h2 {
     max-width: 60%;
     margin: 0 auto 20px;
     text-align: center;
-    color: #FFE; }
+    color: white; }
   section.intro ul {
     list-style: none; }
     section.intro ul li p {
       margin-bottom: 0; }
-  section.intro span {
-    -webkit-animation: 1s blink step-end infinite;
-            animation: 1s blink step-end infinite; }
+    section.intro ul li:last-child {
+      margin-bottom: 0px; }
 
 .home-wrap {
   display: -webkit-box;
