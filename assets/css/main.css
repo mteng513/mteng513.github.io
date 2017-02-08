@@ -795,8 +795,7 @@ section.box {
     width: calc(50% - 14px);
     border: 3px solid white;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-    margin: 4px;
-    height: 17.45%; }
+    margin: 4px; }
     section.box .box-img img {
       width: 100%;
       display: block; }
