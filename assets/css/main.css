@@ -462,6 +462,22 @@ body {
   .home-cta:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5); }
 
+.flex-video {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 67.5%;
+  position: relative; }
+
+.flex-video iframe,
+.flex-video object,
+.flex-video embed,
+.flex-video video {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0; }
+
 .home-wrap header {
   width: 135px;
   background: white;
@@ -683,8 +699,7 @@ section.about {
       text-align: center; } }
 
 section.blog {
-  background: -webkit-linear-gradient(53deg, #111266, #3E1166, #21114F);
-  background: linear-gradient(37deg, #111266, #3E1166, #21114F);
+  background: #222;
     background-position: center; }
   section.blog .home-cta {
     color: #3d96c0; }
